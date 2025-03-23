@@ -1,24 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Home from "./Home";
-import {
-  AboutBanner,
-  Contact,
-  PortfolioBanner,
-} from "./component/portfolio/Components";
-import MyPortfolio from "./View/portfolio";
+import MyPortfolio from "./View/portfolio/Router";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <Home /> */}
-    {/* <AboutBanner /> */}
-    {/* <PortfolioBanner /> */}
-    {/* <Contact /> */}
     <MyPortfolio />
   </React.StrictMode>
 );

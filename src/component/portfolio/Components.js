@@ -1,6 +1,6 @@
 // contains : html components
 
-// Home done
+// Home
 
 export function HomeBanner() {
   return (
@@ -17,7 +17,7 @@ export function HomeBanner() {
   );
 }
 
-// About me done
+// About me
 export function AboutBanner() {
   function Card({ title, desc, time }) {
     return (
@@ -165,6 +165,7 @@ export function PortfolioBanner() {
   );
 }
 
+// Contact
 export function ContactBanner() {
   function ContactForm() {
     return (
@@ -220,10 +221,61 @@ export function ContactBanner() {
     );
   }
 
+  function Footer() {
+    return (
+      <footer>
+        <div class="footer-content">
+          <div class="footer-message">
+            <div class="footer-text-title">
+              <h3>Conjen's Portfolio</h3>
+            </div>
+            <div class="footer-logo">
+              <img src="./assets/icons/logo.svg" alt="logo" />
+              <span class="message">
+                <p>
+                  Thank you for visiting my portfolio! I hope you enjoy
+                  exploring my work. Feel free to reach out if you’d like to
+                  collaborate or just say hi!
+                </p>
+              </span>
+            </div>
+          </div>
+
+          <div class="footer-mycontact">
+            <div class="footer-text-title">
+              <h3>My Contact</h3>
+            </div>
+
+            <div class="contact-me">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <span>0812345678</span>
+            </div>
+
+            <div class="contact-me">
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <span>jennifer.amelinda@binus.ac.id</span>
+            </div>
+
+            <div class="contact-me">
+              <div class="icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <span>Jennifer Amelinda</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    );
+  }
+
   return (
     <>
       <ContactForm />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
